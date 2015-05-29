@@ -32,7 +32,7 @@ script:
   - phpmd . text naming --exclude vendor
   - phpmd . text unusedcode --exclude vendor
   ## PHPLOC
-  - php phploc.phar . --exclude vendor
+  - php -d error_reporting=1 phploc.phar . --exclude vendor
   ## PHPUNIT
   - phpunit .
   ## LINT
