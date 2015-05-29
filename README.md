@@ -1,2 +1,2 @@
 # testravis
-just a test of travis
+This is just a test of travis ci
