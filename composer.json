@@ -1,0 +1,21 @@
+{
+    "name": "dodger451/testravis",
+    "description": "Test running Travis",
+    "keywords": ["deploy", "travis", "template"],
+    "homepage": "http://david.latotzky.de",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "David Latotzky",
+            "homepage": "http://david.latotzky.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+    },
+    "require-dev": {
+        "phpmd/phpmd" : "@stable"
+    },
+    "recommend": {
+    }
+}
