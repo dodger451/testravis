@@ -34,7 +34,7 @@ script:
   - php -d error_reporting=1 phploc.phar . --exclude vendor
   ## PHPUNIT
   - mkdir -p build/logs
-  - php vendor/bin/phpunit -c phpunit.xml.dist
+  - php phpunit -c phpunit.xml.dist
   ## LINT
   - find ./ -type f -name \*.php -exec php -l {} \; | grep -v 'No syntax errors detected'
 
