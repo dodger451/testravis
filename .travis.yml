@@ -36,11 +36,13 @@ script:
   - mkdir -p build/logs
   - phpunit -c phpunit.xml.dist
   ## LINT
-  - find ./application/ -type f -name \*.php -exec php -l {} \; | grep -v 'No syntax errors detected'
+  ##| grep -v 'No syntax errors detected'
+  - find ./application/ -type f -name \*.php -exec php -l {} \;
 
 after_script:
+  - mkdir -p build/cov/
   - php vendor/bin/coveralls
   
-notifications:
-  email:
-    david-testravis@latotzky.de
+##notifications:
+##  email:
+##    david-testravis@latotzky.de
