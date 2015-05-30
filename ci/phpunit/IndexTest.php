@@ -1,5 +1,4 @@
 <?php
-namespace testravis;
 
 class IndexTest extends PHPUnit_Framework_TestCase
 {
