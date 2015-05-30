@@ -4,6 +4,9 @@ php:
   - 5.5
 
 before_script:
+  ## Composer
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
   ## PHP_CodeSniffer
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
@@ -34,10 +37,14 @@ script:
   ## PHPLOC
   - php -d error_reporting=1 phploc.phar . --exclude vendor
   ## PHPUNIT
-  - phpunit .
+  - mkdir -p build/logs
+  - php vendor/bin/phpunit -c phpunit.xml.dist
   ## LINT
   - find ./ -type f -name \*.php -exec php -l {} \;
 
+after_script:
+  - php vendor/bin/coveralls
+  
 notifications:
   email:
     david-testravis@latotzky.de
