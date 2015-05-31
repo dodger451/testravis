@@ -22,6 +22,6 @@
         </whitelist>
     </filter>
      <logging>
-        <log type="coverage-php" target="build/cov/coverage.cov"/>
+         <log type="coverage-clover" target="build/cov/clover.xml"/>
     </logging>
 </phpunit>
