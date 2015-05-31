@@ -34,13 +34,13 @@ script:
   - php -d error_reporting=1 phploc.phar . --exclude vendor
   ## PHPUNIT
   - mkdir -p build/logs
+  - mkdir -p build/cov/
   - phpunit -c phpunit.xml.dist
   ## LINT
   ##| grep -v 'No syntax errors detected'
   - find ./application/ -type f -name \*.php -exec php -l {} \;
 
 after_script:
-  - mkdir -p build/cov/
   - php vendor/bin/coveralls
   
 ##notifications:
