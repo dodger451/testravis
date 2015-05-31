@@ -1,5 +1,4 @@
 <?php
-use testravis;
-
-$h = new HelloWorld();
+require 'HelloWorld.php';
+$h = new testravis\HelloWorld();
 echo $h->hello();
