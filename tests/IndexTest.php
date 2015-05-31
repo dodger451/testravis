@@ -1,7 +1,7 @@
 <?php
 namespace Latotzky\Testravis\Test;
 
-class IndexTest extends PHPUnit_Framework_TestCase
+class IndexTest extends \PHPUnit_Framework_TestCase
 {
     protected $classToTest = 'Latotzky\Testravis\HelloWorld';
     public function setUp()
