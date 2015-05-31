@@ -5,7 +5,7 @@ $loader = __DIR__ . '/../../vendor/autoload.php';
 if (file_exists(__DIR__ . '/../../../../../vendor/autoload.php')) {
     $loader = __DIR__ . '/../../../../../vendor/autoload.php';
 }
-
+echo 'include autoloader:' . $loader . PHP_EOL;
 if (!$loader = @include($loader)) {
     echo <<<EOM
 You must set up the project dependencies by running the following commands:

@@ -5,6 +5,7 @@ use PHPUnit_Framework_TestCase;
 
 class IndexTest extends PHPUnit_Framework_TestCase
 {
+    protected $classToTest = 'HelloWorld';
     public function setUp()
     {
     }
@@ -13,7 +14,7 @@ class IndexTest extends PHPUnit_Framework_TestCase
     }
     public function testHelloWorld()
     {
-        $hello = new HelloWorld();
+        $hello = new $this->classToTest();
         $this->assertEquals('Hello', $hello->hello());
     }
 }
