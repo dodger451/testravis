@@ -13,6 +13,7 @@ class IndexTest extends PHPUnit_Framework_TestCase
     }
     public function testHelloWorld()
     {
-        $this->assertEquals('a', 'a');
+        $h = new HelloWorld();
+        $this->assertEquals('Hello', $h->hello());
     }
 }
