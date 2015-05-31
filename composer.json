@@ -19,5 +19,18 @@
         "phpunit/phpunit": "~4.5"
     },
     "recommend": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Latotzky\\Testravis\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Latotzky\\Testravis\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }

@@ -1,13 +1,9 @@
 <?php
-namespace testravis;
-
-use PHPUnit_Framework_TestCase;
-
-require 'src/testravis/HelloWorld.php';
+namespace Latotzky\Testravis\Test;
 
 class IndexTest extends PHPUnit_Framework_TestCase
 {
-    protected $classToTest = 'testravis\HelloWorld';
+    protected $classToTest = 'Latotzky\Testravis\HelloWorld';
     public function setUp()
     {
     }

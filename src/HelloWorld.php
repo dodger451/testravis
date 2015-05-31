@@ -1,5 +1,5 @@
 <?php
-namespace testravis;
+namespace Latotzky\Testravis;
 
 class HelloWorld
 {
