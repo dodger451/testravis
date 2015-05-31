@@ -1,11 +1,9 @@
 <?php
-//require('loader.php');
-//spl_autoload_register('loader');
-$loader = __DIR__ . '/../vendor/autoload.php';
+$loader = __DIR__ . '/../../vendor/autoload.php';
 
 // local testing
-if (file_exists(__DIR__ . '/../../../../vendor/autoload.php')) {
-    $loader = __DIR__ . '/../../../../vendor/autoload.php';
+if (file_exists(__DIR__ . '/../../../../../vendor/autoload.php')) {
+    $loader = __DIR__ . '/../../../../../vendor/autoload.php';
 }
 
 if (!$loader = @include($loader)) {
