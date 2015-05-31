@@ -13,16 +13,7 @@ class IndexTest extends PHPUnit_Framework_TestCase
     }
     public function testHelloWorld()
     {
-        $hello = $this->getHelloWorld();
-        $this->assertEquals('Hello', $hello->hello());
-    }
-
-    /**
-     * @return HelloWorld
-     */
-    protected function getHelloWorld()
-    {
         $hello = new HelloWorld();
-        return $hello;
+        $this->assertEquals('Hello', $hello->hello());
     }
 }
