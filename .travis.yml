@@ -38,7 +38,7 @@ script:
   - phpunit -c phpunit.xml.dist
   ## LINT
   ##| grep -v 'No syntax errors detected'
-  - find ./application/ -type f -name \*.php -exec php -l {} \;
+  - find ./src/ -type f -name \*.php -exec php -l {} \;
 
 after_script:
   - php vendor/bin/coveralls
